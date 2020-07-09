@@ -13,7 +13,7 @@ for simple_import in result:
     if(simple_import._parts[0] != 'main.scss'):
         for simple_path_ele in simple_import._parts:
             if (counter == 1):
-                simple_path = simple_path + simple_path_ele[1:]
+                simple_path = simple_path + simple_path_ele[1:-5]
             else:
                 simple_path = simple_path + simple_path_ele + '/'
             counter = counter - 1
